@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Translator
+    </title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        button {
+            color: aliceblue;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <!-- nav bar -->
+        <tr>
+            <td><a href="/">Home</a></td>
+            <td><a href="/about">About</a></td>
+            <td><a href="/team">Team</a></td>
+        </tr>
+    </table>
+    <h1>Translator</h1>
+    <h2>Translate from English to Spanish</h2>
+    <h3>Enter the text to translate</h3>
+    <form method="POST" action="/translate">
+      <textarea name="text" rows="10" cols="50">{{ text }}</textarea>
+      <br/>
+      <input type="submit" value="Translate"/>
+    </form>
+    
+</body>
+
+</html>

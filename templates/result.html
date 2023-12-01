@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"> </script>
+    <title>
+        Translator
+    </title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        button {
+            color: aliceblue;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <!-- nav bar -->
+        <tr>
+            <td><a href="/">Home</a></td>
+            <td><a href="/about">About</a></td>
+            <td><a href="/team">Team</a></td>
+        </tr>
+    </table>
+    
+    <p>Original Text:</p>
+    <p>{{ text }}</p>
+    
+    <p>Translated Text:</p> 
+    <p>{{ result }}</p>
+    
+    <a href="/">Translate another text</a>
+    
+</body>
+</html>
